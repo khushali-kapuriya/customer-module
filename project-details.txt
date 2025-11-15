@@ -1,0 +1,51 @@
+1.  Requirements Make sure your environment matches this:
+
+-   PHP 8.2+
+-   Composer (latest version)
+-   MySQL / MariaDB
+-   Laravel 11
+-   Node.js & npm
+-   Git
+
+2.  Project Setup Steps
+
+3.  Clone the Repository git clone
+
+4.  Go Into the Project cd your-project-name
+
+5.  Install PHP Dependencies composer install
+
+6.  Copy .env File cp .env.example .env
+
+7.  Generate Application Key php artisan key:generate
+
+8.  Set Up Database in .env DB_CONNECTION=mysql DB_HOST=127.0.0.1
+    DB_PORT=3306 DB_DATABASE=your_db_name DB_USERNAME=your_username
+    DB_PASSWORD=your_password
+
+9.  Run Migrations php artisan migrate
+
+10. Run Seeders php artisan db:seed
+
+11. Start the Server php artisan serve
+
+12. Module Overview
+
+-   Country Master
+-   State Master
+-   City Master
+-   Customer Master
+-   Multi-Contact Support
+-   Dynamic Dropdowns
+-   Backend Validations
+
+4.  API Routes /api/countries/{id}/states /api/states/{id}/cities
+    /api/cities/{id}
+
+5.  Folder Structure app/Models app/Http/Controllers
+    resources/views/customers database/migrations
+
+6.  Tech Notes Dynamic rows for contacts, GSTIN/PAN logic, state code,
+    validations.
+
+7.  How to Run composer install php artisan migrate php artisan serve
